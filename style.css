@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#decrement {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#bigDiv {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn {
+    position: relative;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#count {
+    font-size: 2.2rem;
+}
+
+#btn>button {
+    border: none;
+    padding: 7px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:nth-child(odd) {
+    background-color: rgb(117, 6, 6);
+}
+
+button:nth-child(even) {
+    background-color: green;
+}
+
+.history>p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
